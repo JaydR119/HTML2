@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <title>Retromeda - It will never be Game Over!!!</title>
+    <style>
+      @import "https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap";
+
+main {
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
+  background-color: black;
+  height: 80%;
+  margin: auto;
+}
+
+h1  {
+  display: inline;
+}
+
+#nav-bar {
+  display: inline;
+  font-size: 1.2em;
+  position: fixed;
+  right: 9%;
+  top: 3%;
+  padding-top: 1%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding-left: 0.7em;
+}
+
+
+form {
+  margin: auto;
+}
+
+#header-img {
+  padding-top: 3%;
+  padding-left: 2%;
+}
+
+#form_container {
+  text-align: center;
+}
+
+#gaming, #grapdes, #webdev {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+
+#grapdes, ul {
+  list-style-type: none;
+}
+
+li  {
+  display: inline;
+  font-size: 0.8em;
+}
+
+.flex_container {
+  display: flex;
+}
+
+hr {
+  width: 90%;
+}
+
+.para {
+  margin: auto;
+  text-align: center;
+  padding: 1%;
+  font-size: 0.7em;
+}
+
+.one_p  {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#footer {
+  text-align: right;
+  padding: 2%;
+}
+
+@media (max-width 960px)  {
+  width: 100%;
+  height: 80%;
+}
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <img id="header-img" src="#" height="50" width="75" alt="Retromeda logo">
+        <h1>RETROMEDA</h1>
+        <nav id="nav-bar">
+          <a href="#webdev" class="nav-link">Web Development</a>
+          <a href="#grapdes" class="nav-link">Graphic Design</a>
+          <a href="#gaming" class="nav-link">Gaming Rigs</a>
+        </nav>
+      </header>
+      <section>
+        <p class="one_p">Interested in joining our mailing list? Sign Up below</p>
+      </section>
+      <section id="form_container">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="email" placeholder="email" type="email" name="email">
+          <br>
+          <br>
+          <input id="submit" type="submit" value="Submit" name="submit">
+        </form>
+      </section>
+      <hr>
+      <section id="webdev">
+        <h2>Web Development<h2>
+        <p class="para">At Retromeda, we're crazy about the web design and development. Whether it be a stand blog or landing page, to complex e-commerce web applications, Retromeda is youe one stop shop for all things web ralated.</p>
+          <p class="para">Our modern and mobile-friendly designs can improve your website ranking on search engines such as Google and Bing.</p>
+          <p class="para">We follow fast development and feedback process to quickly turn your business requirements into real life websites.</p>
+          <p class="para">Using data-driven digital marketing, we implement effective campaigns to acquire more customers for your business.</p>
+        <section="flex_container">
+        <img class="logo" alt="html logo" src="data:image/png;base64,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">
+             <img class="logo" alt="css logo" src="data:image/png;base64,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">
+          <img class="logo" alt="Javascript logo" src="data:image/png;base64,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">
+          </section> 
+      </section>
+      <hr>
+      <section id="grapdes">
+        <h2>Graphic Design<h2>
+          <section>
+            <ul>
+              <li>Logos</li>
+              <li>Branding</li>
+              <li>Flyers</li>
+              <li>Posters</li>
+              <li>Brochure</li>
+              <li>Large Format</li>
+            </ul>
+            
+            <img src="https://www.adobe.com/content/dam/cc/us/en/products/illustrator/ai-riverflow-2_720x520.jpg.img.jpg" width="60%" alt="vector-design">
+        <p class="para">Hiring a graphic designer is really easy with Retromeda. Our multi-disciplined team can develop artwork to your specification and requirements quickly and to budget.</p>
+      </section>
+      <hr>
+      <section id="gaming">
+        <h2>Gaming Rigs</h2>
+        <p class="para">Custom build a Gaming PC with Retromeda. Our computers are custom built to order, with the specifications of your choice. You are in control of every aspect of the build; you can choose every component of the PC, all the way from the case, to the graphics cards, to the RAM. Choose your budget and choose your build. We have a variety of custom gaming computers, laptops and consoles which can be completely customised to your unique preferences, whilst maintaining value and quality. If you are on a budget, our custom Cyberpower PC configurators are fully optimised for gamers and are available with the best components and software on the market. Contact us to discuss your build today!</p>
+        <iframe id="video" width="1280" height="720" src="https://www.youtube.com/embed/qCPIEYfN_hc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+        <footer id="footer">
+          &copy Retromeda
+      </footer>
+    </main>
+  </body>
+</html>
