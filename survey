@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Retromeda Design Service Order Form</title>
+    <meta charset="UTF-8">
+    <style>
+    html, body {
+      text-align: center;
+      font-family: Helvetica, sans-serif;
+      background-color: black;
+    }
+
+    .field {
+      display: inline-block;
+      text-align: left;
+      width: 48%;
+      padding: 5px;
+    }
+
+    .labels {
+      display: inline-block;
+      text-align: right;
+      width: 40%;
+      padding: 10px;
+      margin-left: 10px;
+      vertical-align: top;
+    }
+
+    .row {
+      
+    }
+
+    textarea {
+      height: 100px;
+      text-align: left;
+      width: 50%;
+      verticle-align: middle;
+      
+    }
+
+    #submit {
+        background-color: #59ace0;
+        color: white;
+        border-radius: 4px;
+        width: 10%;
+        padding: 10px
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .radio, .checkbox {
+      position: relative;
+      left: -43px;
+      display: block;
+      padding-bottom: 15px;
+    }
+
+    main {
+      background-color: white;
+      width: 70%;
+      margin: auto;
+    }
+
+    #outer_form {
+      padding: 10px;
+    }
+
+    #dropdown {
+      
+     margin-bottom: 15px;
+    }
+
+    h1 {
+      padding: 2.5%
+    }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Retromeda Design Service Order Form</h1>
+      <section id="outer_form">
+        <p id="description">Please complete the below form to determine the service your require.</p>
+        <form id="survey-form" method="" action="">
+          <section class="row">
+            <section class="labels">
+              <label for="name" id="name-label">*Name: </label>
+            </section>
+            <section class="field">
+              <input id="name" class="input_field" type="text" placeholder="John Smith" required>
+            </section>
+          </section>
+          <section class="row">
+            <section class="labels">
+              <label for="email" id="email-label">*Email: </label>
+            </section>
+            <section class="field">
+              <input id="email" class="input_field" type="email" placeholder="John.Smith@ymail.com" required>
+            </section>
+            <section class="row">
+            <section class="labels">
+              <label for="age" id="number-label">*Age: </label>
+            </section>
+            <section class="field">
+              <input id="number" class="input_field" type="number" placeholder="25" min="18" max="80" required>
+            </section>
+          </section>
+          <section class="row">
+            <section class="labels">
+              <label for="currSituation">Which option best describes your current situation?</label>
+            </section>
+            <section class="field">
+              <select id="dropdown">
+                <option>Please choose an option:</option>
+                <option>Student</option>
+                <option>Employed (FT/PT)</option>
+                <option>Uemployed</option>
+                <option>Prefer not to Say</option>
+              </select>
+            </section>
+            <section class="row">
+            <section class="labels">
+              <label for="office">Please select the region of the UK you are located: </label>
+            </section>
+           <section class="field">
+              <ul id="preference">
+                <li class="radio">
+                  <input type="radio" value="1" name="region">London</input>
+                </li>
+                <li class="radio">
+                  <input type="radio" value="2" name="region">South-East</input>
+                </li>
+                <li class="radio">
+                  <input type="radio" value="3" name="region">South-West</input>
+                </li>
+                <li class="radio">
+                  <input type="radio" value="4" name="region">North-East</input>
+                </li>
+                <li class="radio">
+                  <input type="radio" value="5" name="region">North-West</input>
+                </li>
+                <li class="radio">
+                  <input type="radio" value="6" name="region">East of England</input>
+                </li>
+                   <li class="radio">
+                  <input type="radio" value="7" name="region">Midlands</input>
+                </li>
+              </ul>
+            </section>
+          </section>
+           <section class="row">
+            <section class="labels">
+              <label for="currSituation">What are you most interested in?</label>
+            </section>
+            <section class="field">
+              <select id="dropdown">
+                <option>Please choose an option:</option>
+                <option>Software</option>
+                <option>Hardware</option>
+                <option>Both</option>
+                <option>Consultancy</option>
+              </select>
+            </section>
+          <section class="row">
+            <section class="labels">
+              <label for="service">Please select the service your require: </label>
+            </section>
+            <section class="field">
+              <ul id="preference">
+                <li class="checkbox">
+                  <input type="checkbox" value="1">Front-End Development</input>
+                </li>
+                <li class="checkbox">
+                  <input type="checkbox" value="2">Back-End Development</input>
+                </li>
+                <li class="checkbox">
+                  <input type="checkbox" value="3">Off-the-cuff Projects</input>
+                </li>
+                <li class="checkbox">
+                  <input type="checkbox" value="4">Games Development</input>
+                </li>
+              </ul>
+            </section>
+            <section class="row">
+            <section class="labels">
+              <label for="additional">Additional Comments: </label>
+            </section>
+            <section class="field">
+              <textarea placeholder="Additional comments here..." id="comments"></textarea>
+            </section>
+            <section>
+              <button id="submit">Submit</button>
+            </section>
+          </section>
+        </form>
+      </section>
+    </main>
+  </body
+</html>
